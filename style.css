@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  margin: 2rem 1rem;
+  padding: 1.25rem;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.75);
+}
+
+.img-top {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-top img {
+  width: 100%;
+  display: block;
+}
+
+.img-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  cursor: pointer;
+  display: none;
+}
+
+.img-overlay img {
+  position: absolute;
+  width: 50px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-top:hover .img-overlay {
+  display: block;
+}
+
+.box-text a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 21px;
+  padding: 1.25rem 0;
+  display: inline-block;
+}
+
+.box-text a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+p {
+  color: hsl(215, 51%, 70%);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+}
+
+.eth p {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+.eth p,
+.days p {
+  margin-left: 0.313rem;
+}
+
+.eth,
+.days {
+  display: flex;
+  align-items: center;
+}
+
+/*hr {
+   border-color: hsl(215, 32%, 27%); */
+/* border: 0.5px solid hsl(215, 51%, 70%);
+  margin: 0.625rem;
+} */
+
+.author {
+  border-top: 1.5px solid hsla(214, 6%, 45%, 0.6);
+  display: flex;
+  align-items: center;
+  /* padding-top: 20px; */
+}
+
+.author img {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  border: 1.5px solid #fff;
+}
+
+.author p {
+  margin-left: 1rem;
+}
+
+.author a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
